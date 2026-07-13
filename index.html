@@ -167,5 +167,6 @@ $$('#condition button').forEach(b=>b.onclick=()=>{state.condition=b.dataset.valu
 $$('.nav button').forEach(b=>b.onclick=()=>{$$('.page').forEach(p=>p.classList.toggle('active',p.dataset.page===b.dataset.tab));$$('.nav button').forEach(x=>x.classList.toggle('active',x===b));if(b.dataset.tab==='plan')renderPlan()});
 renderAll();
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "706cf2009ab04603b262ecac099dbc3b"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
