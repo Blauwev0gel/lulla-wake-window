@@ -26,6 +26,12 @@
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(#faf7f1,#f4efe7);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom))}button,input,select{font:inherit}.app{width:min(560px,100%);margin:auto;min-height:100vh;padding:0 18px 30px}.topbar{height:64px;display:flex;align-items:center;justify-content:space-between}.brand{font:500 26px Georgia,serif}.simple-badge{font-size:11px;color:var(--accent);background:var(--soft);padding:7px 9px;border-radius:999px;font-weight:800}.page{display:none}.page.active{display:block}h1,h2,h3{font-family:Georgia,serif;font-weight:500;letter-spacing:-.035em;margin:0}h1{font-size:36px;line-height:1.05}.intro{color:var(--muted);line-height:1.45;margin:9px 0 20px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:14px}.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:grid;gap:7px}.field label{font-size:12px;font-weight:800;color:var(--muted)}.control{width:100%;min-height:54px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:0 12px;color:var(--ink)}.awake{font:700 28px Georgia,serif}.adjust{margin:12px 0 16px}.adjust summary{cursor:pointer;color:var(--accent);font-weight:800;font-size:13px}.condition{display:grid;gap:8px;margin-top:12px}.condition button{min-height:46px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:left;padding:0 14px;color:var(--ink);font-weight:750}.condition button.active{border-color:var(--accent);background:var(--soft);color:var(--accent)}.answer{background:var(--accent);color:#fff;border-radius:28px;padding:22px;margin-top:12px}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:#dbe8df}.time{font:500 52px/1 Georgia,serif;letter-spacing:-.055em;margin:9px 0 18px}.metric{padding:12px 0;border-top:1px solid rgba(255,255,255,.18)}.metric:first-of-type{border-top:0}.metric span,.metric strong{display:block}.metric span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#dbe8df;font-weight:800}.metric strong{font-size:18px;margin-top:5px}.metric small{display:block;color:#dbe8df;margin-top:4px;line-height:1.4}.why{margin-top:14px;border-top:1px solid rgba(255,255,255,.18);padding-top:13px}.why summary{cursor:pointer;font-weight:800}.why p{font-size:13px;line-height:1.5;color:#e7eee8;margin:10px 0 0}.plan-head{margin-bottom:18px}.plan-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.scenario{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:14px}.scenario.active{box-shadow:inset 0 0 0 1px var(--accent)}.scenario-top{display:flex;justify-content:space-between;gap:12px}.scenario p{color:var(--muted);font-size:13px;line-height:1.45;margin:7px 0 12px}.badge{font-size:11px;background:var(--soft);color:var(--accent);font-weight:850;padding:5px 8px;border-radius:999px;height:max-content}.row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid #ece7de}.row small{display:block;color:var(--muted);margin-top:4px;line-height:1.35}.row strong{text-align:right;white-space:nowrap}.primary{width:100%;min-height:52px;border:0;border-radius:15px;background:var(--accent);color:#fff;font-weight:850;margin-top:8px}.nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(560px,100%);height:calc(var(--nav) + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;background:rgba(255,253,248,.98);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}.nav button{border:0;background:none;color:#7d847e;font-weight:850;font-size:12px}.nav button.active{color:var(--accent)}.nav svg{display:block;margin:0 auto 4px;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.toast{position:fixed;bottom:calc(var(--nav) + 16px);left:50%;transform:translate(-50%,12px);opacity:0;background:var(--ink);color:#fff;padding:10px 13px;border-radius:12px;font-size:13px;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:390px){.input-grid,.plan-controls{grid-template-columns:1fr}.time{font-size:46px}}
 
+.rhythm-label{font-size:12px;font-weight:800;color:var(--muted);margin:4px 0 8px}.rhythm-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:14px}.rhythm-option{min-height:48px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);font-weight:800}.rhythm-option.active{background:var(--soft);border-color:var(--accent);color:var(--accent)}
+.plan-summary{background:var(--accent);color:#fff;border-radius:24px;padding:18px;margin-bottom:14px}.plan-summary h2{font-size:25px;margin:3px 0 12px}.summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.summary-item{padding:10px;border-radius:13px;background:rgba(255,255,255,.09)}.summary-item span{display:block;color:#dbe8df;font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:800}.summary-item strong{display:block;margin-top:5px;font-size:14px;line-height:1.25}
+.day-plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:14px}.day-plan-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:4px}.day-plan-head p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.4}.timeline-list{position:relative;margin-top:14px}.timeline-list:before{content:"";position:absolute;left:10px;top:14px;bottom:14px;width:1px;background:var(--line)}.timeline-item{position:relative;display:grid;grid-template-columns:24px 1fr auto;gap:10px;padding:11px 0}.timeline-dot{width:11px;height:11px;border-radius:50%;background:var(--accent);margin:5px 0 0 5px;z-index:1;box-shadow:0 0 0 4px var(--card)}.timeline-item.sleep .timeline-dot{background:#9b8065}.timeline-copy strong{display:block}.timeline-copy small{display:block;color:var(--muted);line-height:1.42;margin-top:4px}.timeline-time{text-align:right;font-weight:850;white-space:nowrap}.plan-note{font-size:12px;line-height:1.5;color:var(--muted);margin:12px 0 0}.plan-actions{display:grid;gap:8px}.secondary{width:100%;min-height:48px;border:1px solid var(--line);border-radius:15px;background:var(--card);color:var(--ink);font-weight:800}
+@media(max-width:390px){.summary-grid{grid-template-columns:1fr}.rhythm-options{grid-template-columns:1fr}.timeline-item{grid-template-columns:24px 1fr}.timeline-time{grid-column:2;text-align:left;margin-top:-4px}}
+
+
 .seo-content{max-width:760px;margin:34px auto 90px;padding:0 18px;color:var(--ink)}
 .seo-content section{padding:28px 0;border-top:1px solid var(--line)}
 .seo-content h2{font-size:28px;margin-bottom:12px}.seo-content h3{font-size:21px;margin:22px 0 8px}
@@ -69,12 +75,22 @@
   </main>
 
   <main class="page" data-page="plan">
-    <div class="plan-head"><h1>Plan the day</h1><p class="intro">Compare the rhythms that may fit this age.</p></div>
-    <div class="plan-controls">
-      <div class="field"><label for="planAge">Preview age</label><select id="planAge" class="control"></select></div>
-      <div class="field"><label for="planWake">Morning wake</label><input id="planWake" class="control" type="time" value="07:00"></div>
+    <div class="plan-head"><h1>Build a baby day plan</h1><p class="intro">Choose an age, morning wake and nap rhythm to generate a practical example day.</p></div>
+    <div class="card">
+      <div class="plan-controls">
+        <div class="field"><label for="planAge">Baby's age</label><select id="planAge" class="control"></select></div>
+        <div class="field"><label for="planWake">Morning wake</label><input id="planWake" class="control" type="time" value="07:00"></div>
+      </div>
+      <div class="rhythm-label">Choose a rhythm</div>
+      <div class="rhythm-options" id="rhythmOptions"></div>
     </div>
-    <div id="scenarios"></div>
+    <section class="plan-summary" id="planSummary"></section>
+    <section class="day-plan">
+      <div class="day-plan-head"><div><h2 id="planTitle">Two-nap day</h2><p id="planDescription"></p></div><span class="badge" id="planBadge">Example day</span></div>
+      <div class="timeline-list" id="dayTimeline"></div>
+      <p class="plan-note">Times are flexible start windows, not fixed appointments. The next part of the plan depends on when the previous nap actually ends.</p>
+    </section>
+    <div class="plan-actions"><button class="primary" id="usePlan">Use this rhythm on Today</button></div>
   </main>
 </div>
 
@@ -93,12 +109,16 @@
       <li>See the next nap or bedtime window.</li>
       <li>Check the wake-window length and suggested nap duration.</li>
     </ol>
-    <p>The <strong>Plan</strong> tab compares age-appropriate day rhythms. Around nap transitions, more than one rhythm may be plausible, so Lulla shows alternatives rather than forcing a single schedule.</p>
+    <p>The <strong>Plan</strong> tab generates a complete example day with nap start windows, wake-window lengths, suggested nap durations and a bedtime range. Around transitions, you can switch between plausible rhythms instead of forcing one schedule.</p>
+    <p><a href="/?tab=plan">Open the baby day plan generator</a> or read the <a href="/baby-sleep-schedule-calculator/">baby sleep schedule calculator guide</a>.</p>
   </section>
   <section>
     <h2>Wake windows by age</h2>
     <div class="seo-grid">
+      <a class="seo-link" href="/wake-windows/4-month-old/">4-month-old wake windows<small>Short wake windows and 4-nap days</small></a>
+      <a class="seo-link" href="/wake-windows/5-month-old/">5-month-old wake windows<small>Four- to three-nap transition guidance</small></a>
       <a class="seo-link" href="/wake-windows/6-month-old/">6-month-old wake windows<small>Three-nap and early two-nap rhythms</small></a>
+      <a class="seo-link" href="/wake-windows/7-month-old/">7-month-old wake windows<small>Three naps and early two-nap signs</small></a>
       <a class="seo-link" href="/wake-windows/8-month-old/">8-month-old wake windows<small>Two- and three-nap possibilities</small></a>
       <a class="seo-link" href="/wake-windows/12-month-old/">12-month-old wake windows<small>Two naps and early transition signals</small></a>
       <a class="seo-link" href="/wake-windows/13-month-old/">13-month-old wake windows<small>Compare one- and two-nap days</small></a>
@@ -111,6 +131,14 @@
     <h2>How long should a baby nap?</h2>
     <p>There is no single ideal nap length for every baby or every nap. Lulla shows a flexible range based on age and the selected rhythm. A short late nap may serve a different purpose from a long midday nap.</p>
     <p><a href="/how-long-should-my-baby-nap/">Read the baby nap-length guide</a></p>
+  </section>
+
+  <section>
+    <h2>Common nap questions</h2>
+    <div class="seo-grid">
+      <a class="seo-link" href="/why-does-my-baby-only-nap-30-minutes/">Why does my baby only nap for 30 minutes?<small>What short naps can mean and what to try next</small></a>
+      <a class="seo-link" href="/nap-transitions/2-to-1/">The 2-to-1 nap transition<small>Signs, example rhythms and how to avoid forcing the change</small></a>
+    </div>
   </section>
   <section>
     <h2>Important</h2>
@@ -146,26 +174,28 @@ const SCENARIOS={
 function scenarioIds(age){if(age<=4)return['4nap','3nap'];if(age<=6)return['3nap','4nap'];if(age<=9)return['3nap','2nap'];if(age<=11)return['2nap','3nap'];if(age<=16)return['2nap','1nap'];if(age<=18)return['1nap','2nap'];return['1nap','2nap']}
 function profile(age,id){const rows=WAKE[id];return rows.find(r=>age>=r.min&&age<=r.max)||rows.reduce((best,r)=>Math.abs(age-(r.min+r.max)/2)<Math.abs(age-(best.min+best.max)/2)?r:best,rows[0])}
 function napRange(d){return d>=100?[90,120]:d>=85?[75,105]:d>=70?[60,90]:d>=55?[45,75]:d>=40?[30,60]:[15,30]}
-let state={age:8,awake:'07:00',condition:'usual',scenario:'2nap',planAge:8,planWake:'07:00'};
+let state={age:8,awake:'07:00',condition:'usual',scenario:'2nap',planAge:8,planWake:'07:00',planScenario:'2nap'};
 try{state={...state,...JSON.parse(localStorage.getItem('lulla_simple_v1')||'null')}}catch{}
-const requestedAge=Number(new URLSearchParams(location.search).get('age'));if(Number.isInteger(requestedAge)&&requestedAge>=3&&requestedAge<=24){state.age=requestedAge;state.scenario=scenarioIds(requestedAge)[0];state.planAge=requestedAge;}
+const params=new URLSearchParams(location.search),requestedAge=Number(params.get('age')),requestedWake=params.get('wake'),requestedRhythm=params.get('rhythm'),requestedTab=params.get('tab');if(Number.isInteger(requestedAge)&&requestedAge>=3&&requestedAge<=24){state.age=requestedAge;state.scenario=scenarioIds(requestedAge)[0];state.planAge=requestedAge;}if(/^\d{2}:\d{2}$/.test(requestedWake||'')){state.planWake=requestedWake;}if(requestedRhythm&&scenarioIds(state.planAge).includes(requestedRhythm)){state.planScenario=requestedRhythm;}
 function save(){try{localStorage.setItem('lulla_simple_v1',JSON.stringify(state))}catch{}}
 function adjustRange(range){let [a,b]=range;if(state.condition==='tired'){a-=12;b-=4}if(state.condition==='poorly'){a-=10;b+=20;if(b-a<60)b=a+60}return[Math.max(45,a),Math.max(a+20,b)]}
 function recommendation(){const p=profile(state.age,state.scenario),sc=SCENARIOS[state.scenario],base=adjustRange(p.w[0]),start=toMin(state.awake)+base[0],end=toMin(state.awake)+base[1],bedStart=18*60+45;let type='nap',idx=0,range=base;if(start>=bedStart-90){type='bedtime';idx=sc.naps;range=adjustRange(p.w[idx]);}
 const a=toMin(state.awake)+range[0],b=toMin(state.awake)+range[1],dur=p.dur[Math.min(idx,p.dur.length-1)]||75;return{type,a,b,range,dur,p}}
 function renderToday(){const r=recommendation();$('#age').value=state.age;$('#awake').value=state.awake;$$('#condition button').forEach(b=>b.classList.toggle('active',b.dataset.value===state.condition));$('#type').textContent=r.type==='bedtime'?'Bedtime':'Next nap';$('#window').textContent=`${clock(r.a)}–${clock(r.b)}`;$('#wakeLength').textContent=`${fmt(r.range[0])}–${fmt(r.range[1])} awake`;$('#from').textContent=`Counted from ${state.awake}`;$('#windDown').textContent=clock(Math.max(toMin(state.awake),r.a-15));$('#napMetric').hidden=r.type==='bedtime';if(r.type==='nap'){const [a,b]=napRange(r.dur);$('#napLength').textContent=`${fmt(a)}–${fmt(b)}`;}$('#reason').textContent=r.type==='bedtime'?'The next full nap would fall too close to the evening, so the final wake window points to bedtime.':'This is the first wake window for the selected age and day rhythm.'}
 function simulate(age,id,wake){const p=profile(age,id),sc=SCENARIOS[id],rows=[];let at=toMin(wake);for(let i=0;i<sc.naps;i++){const [a,b]=p.w[i],dur=p.dur[i]||60,mid=Math.round((a+b)/2);rows.push({name:`Nap ${i+1}`,start:at+a,end:at+b,w:[a,b],dur});at=at+mid+dur}const [a,b]=p.w[sc.naps];rows.push({name:'Bedtime',start:at+a,end:at+b,w:[a,b]});return rows}
-function renderPlan(){const age=state.planAge,wake=state.planWake;$('#planAge').value=age;$('#planWake').value=wake;$('#scenarios').innerHTML=scenarioIds(age).map(id=>{const sc=SCENARIOS[id],rows=simulate(age,id,wake),active=id===state.scenario&&age===state.age;return `<article class="scenario ${active?'active':''}"><div class="scenario-top"><div><h3>${sc.name}</h3><p>${sc.desc}</p></div>${active?'<span class="badge">Used today</span>':''}</div>${rows.map(r=>`<div class="row"><div><strong>${r.name}</strong><small>${r.name==='Bedtime'?'Final wake window':'Wake window'} · ${fmt(r.w[0])}–${fmt(r.w[1])}${r.dur?`<br>Suggested nap · ${napRange(r.dur).map(fmt).join('–')}`:''}</small></div><strong>${clock(r.start)}–${clock(r.end)}</strong></div>`).join('')}<button class="primary" data-use="${id}">${active?'Using this rhythm':'Use for today'}</button></article>`}).join('');$$('[data-use]').forEach(b=>b.onclick=()=>{if(state.planAge!==state.age){show('Set the same age on Today before applying this rhythm.');return}state.scenario=b.dataset.use;save();renderAll();show('Rhythm applied')})}
+function planStats(rows){const naps=rows.filter(r=>r.name.startsWith('Nap')),mins=naps.map(r=>napRange(r.dur)[0]),maxs=naps.map(r=>napRange(r.dur)[1]),bed=rows.at(-1);return{naps:naps.length,totalMin:mins.reduce((a,b)=>a+b,0),totalMax:maxs.reduce((a,b)=>a+b,0),bed}}
+function renderPlan(){const age=state.planAge,wake=state.planWake,ids=scenarioIds(age);if(!ids.includes(state.planScenario))state.planScenario=ids[0];$('#planAge').value=age;$('#planWake').value=wake;$('#rhythmOptions').innerHTML=ids.map(id=>`<button class="rhythm-option ${id===state.planScenario?'active':''}" data-rhythm="${id}">${SCENARIOS[id].name}</button>`).join('');$$('[data-rhythm]').forEach(b=>b.onclick=()=>{state.planScenario=b.dataset.rhythm;save();renderPlan()});const id=state.planScenario,sc=SCENARIOS[id],rows=simulate(age,id,wake),stats=planStats(rows),bed=stats.bed;$('#planTitle').textContent=sc.name;$('#planDescription').textContent=sc.desc;$('#planBadge').textContent=`${age} months`;$('#planSummary').innerHTML=`<div class="eyebrow">Generated day plan</div><h2>${sc.name} from ${wake}</h2><div class="summary-grid"><div class="summary-item"><span>Naps</span><strong>${stats.naps}</strong></div><div class="summary-item"><span>Day sleep</span><strong>${fmt(stats.totalMin)}–${fmt(stats.totalMax)}</strong></div><div class="summary-item"><span>Bedtime</span><strong>${clock(bed.start)}–${clock(bed.end)}</strong></div></div>`;const wakeRow={name:'Morning wake',start:toMin(wake),end:toMin(wake),w:null,dur:null};$('#dayTimeline').innerHTML=[wakeRow,...rows].map((r,i)=>{const isSleep=r.name!=='Morning wake',isBed=r.name==='Bedtime',nap=r.name.startsWith('Nap'),range=nap?napRange(r.dur):null,details=r.name==='Morning wake'?'Day starts here':isBed?`Final wake window · ${fmt(r.w[0])}–${fmt(r.w[1])}`:`Wake window · ${fmt(r.w[0])}–${fmt(r.w[1])}<br>Suggested nap · ${range.map(fmt).join('–')}`;return `<div class="timeline-item ${isSleep?'sleep':''}"><div class="timeline-dot"></div><div class="timeline-copy"><strong>${r.name}</strong><small>${details}</small></div><div class="timeline-time">${r.name==='Morning wake'?clock(r.start):`${clock(r.start)}–${clock(r.end)}`}</div></div>`}).join('');$('#usePlan').textContent=(state.planAge===state.age&&state.planScenario===state.scenario&&state.planWake===state.awake)?'Using this plan on Today':'Use this plan on Today';}
 function renderAll(){renderToday();renderPlan()}
 function show(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 const opts=Array.from({length:22},(_,i)=>i+3).map(n=>`<option value="${n}">${n} months</option>`).join('');$('#age').innerHTML=$('#planAge').innerHTML=opts;
-$('#age').onchange=e=>{state.age=+e.target.value;state.scenario=scenarioIds(state.age)[0];state.planAge=state.age;save();renderAll()};
+$('#age').onchange=e=>{state.age=+e.target.value;state.scenario=scenarioIds(state.age)[0];state.planAge=state.age;state.planScenario=state.scenario;save();renderAll()};
 $('#awake').oninput=e=>{state.awake=e.target.value;save();renderToday()};
-$('#planAge').onchange=e=>{state.planAge=+e.target.value;save();renderPlan()};
+$('#planAge').onchange=e=>{state.planAge=+e.target.value;state.planScenario=scenarioIds(state.planAge)[0];save();renderPlan()};
 $('#planWake').oninput=e=>{state.planWake=e.target.value;save();renderPlan()};
 $$('#condition button').forEach(b=>b.onclick=()=>{state.condition=b.dataset.value;save();renderToday()});
+$('#usePlan').onclick=()=>{state.age=state.planAge;state.awake=state.planWake;state.scenario=state.planScenario;save();renderAll();$$('.page').forEach(p=>p.classList.toggle('active',p.dataset.page==='today'));$$('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.tab==='today'));show('Day rhythm applied to Today')};
 $$('.nav button').forEach(b=>b.onclick=()=>{$$('.page').forEach(p=>p.classList.toggle('active',p.dataset.page===b.dataset.tab));$$('.nav button').forEach(x=>x.classList.toggle('active',x===b));if(b.dataset.tab==='plan')renderPlan()});
-renderAll();
+renderAll();if(requestedTab==='plan'){const planButton=$('.nav button[data-tab="plan"]');if(planButton)planButton.click();}
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "706cf2009ab04603b262ecac099dbc3b"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
