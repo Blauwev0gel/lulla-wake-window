@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#42584a">
+<meta name="description" content="Free baby wake window calculator: estimate the next nap or bedtime, see the wake-window length and get a suggested nap duration. No account required.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://lulla-wake-window.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lulla">
+<meta property="og:title" content="Baby Wake Window Calculator & Next Nap Planner | Lulla">
+<meta property="og:description" content="Estimate your baby's next nap or bedtime, wake-window length and suggested nap duration — free in your browser.">
+<meta property="og:url" content="https://lulla-wake-window.pages.dev/">
+<meta property="og:image" content="https://lulla-wake-window.pages.dev/assets/lulla-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baby Wake Window Calculator & Next Nap Planner | Lulla">
+<meta name="twitter:description" content="Estimate your baby's next nap or bedtime, wake-window length and suggested nap duration.">
+<meta name="twitter:image" content="https://lulla-wake-window.pages.dev/assets/lulla-share.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<title>Baby Wake Window Calculator & Next Nap Planner | Lulla</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://lulla-wake-window.pages.dev/#website","url":"https://lulla-wake-window.pages.dev/","name":"Lulla","description":"Free baby wake window calculator and next sleep planner."},{"@type":"WebApplication","@id":"https://lulla-wake-window.pages.dev/#app","name":"Lulla Baby Wake Window Calculator","url":"https://lulla-wake-window.pages.dev/","applicationCategory":"LifestyleApplication","operatingSystem":"Any","isAccessibleForFree":true,"browserRequirements":"Requires JavaScript and a modern web browser","description":"Estimate a baby's next nap or bedtime, wake-window length and suggested nap duration.","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"}}]}</script>
+<style>
+:root{--bg:#f6f2ea;--card:#fffdf8;--ink:#1e2822;--muted:#6d756f;--line:#ddd7cc;--accent:#42584a;--soft:#e8eee9;--nav:72px}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(#faf7f1,#f4efe7);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom))}button,input,select{font:inherit}.app{width:min(560px,100%);margin:auto;min-height:100vh;padding:0 18px 30px}.topbar{height:64px;display:flex;align-items:center;justify-content:space-between}.brand{font:500 26px Georgia,serif}.simple-badge{font-size:11px;color:var(--accent);background:var(--soft);padding:7px 9px;border-radius:999px;font-weight:800}.page{display:none}.page.active{display:block}h1,h2,h3{font-family:Georgia,serif;font-weight:500;letter-spacing:-.035em;margin:0}h1{font-size:36px;line-height:1.05}.intro{color:var(--muted);line-height:1.45;margin:9px 0 20px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:14px}.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:grid;gap:7px}.field label{font-size:12px;font-weight:800;color:var(--muted)}.control{width:100%;min-height:54px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:0 12px;color:var(--ink)}.awake{font:700 28px Georgia,serif}.adjust{margin:12px 0 16px}.adjust summary{cursor:pointer;color:var(--accent);font-weight:800;font-size:13px}.condition{display:grid;gap:8px;margin-top:12px}.condition button{min-height:46px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:left;padding:0 14px;color:var(--ink);font-weight:750}.condition button.active{border-color:var(--accent);background:var(--soft);color:var(--accent)}.answer{background:var(--accent);color:#fff;border-radius:28px;padding:22px;margin-top:12px}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:#dbe8df}.time{font:500 52px/1 Georgia,serif;letter-spacing:-.055em;margin:9px 0 18px}.metric{padding:12px 0;border-top:1px solid rgba(255,255,255,.18)}.metric:first-of-type{border-top:0}.metric span,.metric strong{display:block}.metric span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#dbe8df;font-weight:800}.metric strong{font-size:18px;margin-top:5px}.metric small{display:block;color:#dbe8df;margin-top:4px;line-height:1.4}.why{margin-top:14px;border-top:1px solid rgba(255,255,255,.18);padding-top:13px}.why summary{cursor:pointer;font-weight:800}.why p{font-size:13px;line-height:1.5;color:#e7eee8;margin:10px 0 0}.plan-head{margin-bottom:18px}.plan-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.scenario{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:14px}.scenario.active{box-shadow:inset 0 0 0 1px var(--accent)}.scenario-top{display:flex;justify-content:space-between;gap:12px}.scenario p{color:var(--muted);font-size:13px;line-height:1.45;margin:7px 0 12px}.badge{font-size:11px;background:var(--soft);color:var(--accent);font-weight:850;padding:5px 8px;border-radius:999px;height:max-content}.row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid #ece7de}.row small{display:block;color:var(--muted);margin-top:4px;line-height:1.35}.row strong{text-align:right;white-space:nowrap}.primary{width:100%;min-height:52px;border:0;border-radius:15px;background:var(--accent);color:#fff;font-weight:850;margin-top:8px}.nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(560px,100%);height:calc(var(--nav) + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;background:rgba(255,253,248,.98);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}.nav button{border:0;background:none;color:#7d847e;font-weight:850;font-size:12px}.nav button.active{color:var(--accent)}.nav svg{display:block;margin:0 auto 4px;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.toast{position:fixed;bottom:calc(var(--nav) + 16px);left:50%;transform:translate(-50%,12px);opacity:0;background:var(--ink);color:#fff;padding:10px 13px;border-radius:12px;font-size:13px;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:390px){.input-grid,.plan-controls{grid-template-columns:1fr}.time{font-size:46px}}
+
+.seo-content{max-width:760px;margin:34px auto 90px;padding:0 18px;color:var(--ink)}
+.seo-content section{padding:28px 0;border-top:1px solid var(--line)}
+.seo-content h2{font-size:28px;margin-bottom:12px}.seo-content h3{font-size:21px;margin:22px 0 8px}
+.seo-content p,.seo-content li{line-height:1.65;color:#4f5952}.seo-content ul{padding-left:22px}.seo-content a{color:var(--accent);font-weight:750}
+.seo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.seo-link{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;text-decoration:none;color:var(--ink)}.seo-link small{display:block;color:var(--muted);margin-top:5px;font-weight:500}
+.site-footer{max-width:760px;margin:0 auto;padding:24px 18px 110px;color:var(--muted);font-size:13px}.site-footer nav{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}.site-footer a{color:var(--accent);font-weight:750;text-decoration:none}
+@media(max-width:560px){.seo-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><div class="brand">Lulla</div><div class="simple-badge">Free · No account</div></header>
+
+  <main class="page active" data-page="today">
+    <h1>When should your baby sleep next?</h1>
+    <p class="intro">Choose their age and when they woke up.</p>
+
+    <div class="card">
+      <div class="input-grid">
+        <div class="field"><label for="age">Age</label><select id="age" class="control"></select></div>
+        <div class="field"><label for="awake">Awake since</label><input id="awake" class="control awake" type="time" value="07:00"></div>
+      </div>
+      <details class="adjust">
+        <summary>Adjust for today</summary>
+        <div class="condition" id="condition">
+          <button class="active" data-value="usual">Normal day</button>
+          <button data-value="tired">More tired than usual</button>
+          <button data-value="poorly">Poorly or teething</button>
+        </div>
+      </details>
+    </div>
+
+    <section class="answer">
+      <div class="eyebrow" id="type">Next nap</div>
+      <div class="time" id="window">09:45–10:15</div>
+      <div class="metric"><span>Wake window</span><strong id="wakeLength">2h45–3h15 awake</strong><small id="from">Counted from 07:00</small></div>
+      <div class="metric" id="napMetric"><span>Suggested nap length</span><strong id="napLength">60–90 minutes</strong><small>Use this as a flexible guide — waking naturally is fine.</small></div>
+      <div class="metric"><span>Start winding down</span><strong id="windDown">09:30</strong></div>
+      <details class="why"><summary>Why this window?</summary><p id="reason"></p></details>
+    </section>
+  </main>
+
+  <main class="page" data-page="plan">
+    <div class="plan-head"><h1>Plan the day</h1><p class="intro">Compare the rhythms that may fit this age.</p></div>
+    <div class="plan-controls">
+      <div class="field"><label for="planAge">Preview age</label><select id="planAge" class="control"></select></div>
+      <div class="field"><label for="planWake">Morning wake</label><input id="planWake" class="control" type="time" value="07:00"></div>
+    </div>
+    <div id="scenarios"></div>
+  </main>
+</div>
+
+
+<section class="seo-content" aria-label="About the baby wake window calculator">
+  <section>
+    <h2>Free baby wake window calculator</h2>
+    <p>Lulla estimates the next likely sleep opportunity using your baby’s age, the time they woke up and the day rhythm you choose. The result shows whether the next sleep is more likely to be a nap or bedtime, how long the wake window is, and a flexible suggested nap duration.</p>
+    <p>Wake windows are best treated as a starting point rather than a promise. Babies vary, and sleep can change with development, illness, feeding, stimulation and the previous night. Use the calculator alongside your baby’s own cues.</p>
+  </section>
+  <section>
+    <h2>How it works</h2>
+    <ol>
+      <li>Choose your baby’s age.</li>
+      <li>Enter when they last woke up.</li>
+      <li>See the next nap or bedtime window.</li>
+      <li>Check the wake-window length and suggested nap duration.</li>
+    </ol>
+    <p>The <strong>Plan</strong> tab compares age-appropriate day rhythms. Around nap transitions, more than one rhythm may be plausible, so Lulla shows alternatives rather than forcing a single schedule.</p>
+  </section>
+  <section>
+    <h2>Wake windows by age</h2>
+    <div class="seo-grid">
+      <a class="seo-link" href="/wake-windows/6-month-old/">6-month-old wake windows<small>Three-nap and early two-nap rhythms</small></a>
+      <a class="seo-link" href="/wake-windows/8-month-old/">8-month-old wake windows<small>Two- and three-nap possibilities</small></a>
+      <a class="seo-link" href="/wake-windows/12-month-old/">12-month-old wake windows<small>Two naps and early transition signals</small></a>
+      <a class="seo-link" href="/wake-windows/13-month-old/">13-month-old wake windows<small>Compare one- and two-nap days</small></a>
+      <a class="seo-link" href="/wake-windows/15-month-old/">15-month-old wake windows<small>One-nap transition guidance</small></a>
+      <a class="seo-link" href="/wake-windows/18-month-old/">18-month-old wake windows<small>Typical one-nap rhythm</small></a>
+    </div>
+    <p><a href="/wake-windows/">View all wake-window guidance</a></p>
+  </section>
+  <section>
+    <h2>How long should a baby nap?</h2>
+    <p>There is no single ideal nap length for every baby or every nap. Lulla shows a flexible range based on age and the selected rhythm. A short late nap may serve a different purpose from a long midday nap.</p>
+    <p><a href="/how-long-should-my-baby-nap/">Read the baby nap-length guide</a></p>
+  </section>
+  <section>
+    <h2>Important</h2>
+    <p>Lulla provides general sleep-planning guidance, not medical advice. It does not diagnose sleep problems or replace advice from a qualified healthcare professional. Seek professional help if you are worried about your baby’s sleep, breathing, feeding, health or development.</p>
+  </section>
+</section>
+<footer class="site-footer">
+  <nav><a href="/methodology/">Methodology</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+  <div>© 2026 Lulla. Free browser-based baby sleep planning guidance.</div>
+</footer>
+
+<nav class="nav">
+  <button class="active" data-tab="today" aria-label="Today"><svg viewBox="0 0 24 24"><path d="M12 3a8.5 8.5 0 1 0 8.5 8.5A7 7 0 0 1 12 3Z"/></svg>Today</button>
+  <button data-tab="plan" aria-label="Plan"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 2v4M16 2v4M8 10h8M8 14h5"/></svg>Plan</button>
+</nav>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const pad=n=>String(n).padStart(2,'0');
+const toMin=t=>{const [h,m]=t.split(':').map(Number);return h*60+m};
+const clock=m=>{const x=((Math.round(m)%1440)+1440)%1440;return `${pad(Math.floor(x/60))}:${pad(x%60)}`};
+const fmt=m=>m>=60?`${Math.floor(m/60)}h${m%60?` ${m%60}m`:''}`:`${m}m`;
+const WAKE={
+'4nap':[{min:3,max:4,w:[[75,100],[80,105],[85,110],[95,120],[105,135]],dur:[50,60,45,30]},{min:5,max:6,w:[[90,120],[100,130],[110,140],[120,150],[135,165]],dur:[60,75,45,30]}],
+'3nap':[{min:4,max:5,w:[[90,120],[105,135],[120,150],[135,165]],dur:[60,75,45]},{min:6,max:7,w:[[120,150],[135,170],[150,190],[180,225]],dur:[75,90,35]},{min:8,max:10,w:[[135,165],[150,185],[170,210],[195,240]],dur:[75,90,30]},{min:11,max:12,w:[[150,180],[165,200],[180,220],[210,255]],dur:[60,75,25]}],
+'2nap':[{min:6,max:7,w:[[150,180],[165,195],[195,225]],dur:[75,75]},{min:8,max:10,w:[[165,195],[180,220],[210,255]],dur:[75,90]},{min:11,max:13,w:[[180,225],[195,240],[225,285]],dur:[75,90]},{min:14,max:16,w:[[195,240],[210,255],[240,300]],dur:[60,75]},{min:17,max:20,w:[[210,255],[225,270],[255,315]],dur:[45,60]}],
+'1nap':[{min:12,max:13,w:[[270,315],[285,330]],dur:[90]},{min:14,max:16,w:[[285,330],[300,345]],dur:[90]},{min:17,max:20,w:[[300,345],[315,360]],dur:[105]},{min:21,max:24,w:[[315,360],[330,390]],dur:[105]}]};
+const SCENARIOS={
+'4nap':{name:'4-nap day',desc:'Several short naps with shorter wake windows.',naps:4},
+'3nap':{name:'3-nap day',desc:'Three naps with a shorter late nap.',naps:3},
+'2nap':{name:'2-nap day',desc:'Two restorative naps and a longer final wake window.',naps:2},
+'1nap':{name:'1-nap day',desc:'One midday nap after a longer morning wake window.',naps:1}}
+function scenarioIds(age){if(age<=4)return['4nap','3nap'];if(age<=6)return['3nap','4nap'];if(age<=9)return['3nap','2nap'];if(age<=11)return['2nap','3nap'];if(age<=16)return['2nap','1nap'];if(age<=18)return['1nap','2nap'];return['1nap','2nap']}
+function profile(age,id){const rows=WAKE[id];return rows.find(r=>age>=r.min&&age<=r.max)||rows.reduce((best,r)=>Math.abs(age-(r.min+r.max)/2)<Math.abs(age-(best.min+best.max)/2)?r:best,rows[0])}
+function napRange(d){return d>=100?[90,120]:d>=85?[75,105]:d>=70?[60,90]:d>=55?[45,75]:d>=40?[30,60]:[15,30]}
+let state={age:8,awake:'07:00',condition:'usual',scenario:'2nap',planAge:8,planWake:'07:00'};
+try{state={...state,...JSON.parse(localStorage.getItem('lulla_simple_v1')||'null')}}catch{}
+const requestedAge=Number(new URLSearchParams(location.search).get('age'));if(Number.isInteger(requestedAge)&&requestedAge>=3&&requestedAge<=24){state.age=requestedAge;state.scenario=scenarioIds(requestedAge)[0];state.planAge=requestedAge;}
+function save(){try{localStorage.setItem('lulla_simple_v1',JSON.stringify(state))}catch{}}
+function adjustRange(range){let [a,b]=range;if(state.condition==='tired'){a-=12;b-=4}if(state.condition==='poorly'){a-=10;b+=20;if(b-a<60)b=a+60}return[Math.max(45,a),Math.max(a+20,b)]}
+function recommendation(){const p=profile(state.age,state.scenario),sc=SCENARIOS[state.scenario],base=adjustRange(p.w[0]),start=toMin(state.awake)+base[0],end=toMin(state.awake)+base[1],bedStart=18*60+45;let type='nap',idx=0,range=base;if(start>=bedStart-90){type='bedtime';idx=sc.naps;range=adjustRange(p.w[idx]);}
+const a=toMin(state.awake)+range[0],b=toMin(state.awake)+range[1],dur=p.dur[Math.min(idx,p.dur.length-1)]||75;return{type,a,b,range,dur,p}}
+function renderToday(){const r=recommendation();$('#age').value=state.age;$('#awake').value=state.awake;$$('#condition button').forEach(b=>b.classList.toggle('active',b.dataset.value===state.condition));$('#type').textContent=r.type==='bedtime'?'Bedtime':'Next nap';$('#window').textContent=`${clock(r.a)}–${clock(r.b)}`;$('#wakeLength').textContent=`${fmt(r.range[0])}–${fmt(r.range[1])} awake`;$('#from').textContent=`Counted from ${state.awake}`;$('#windDown').textContent=clock(Math.max(toMin(state.awake),r.a-15));$('#napMetric').hidden=r.type==='bedtime';if(r.type==='nap'){const [a,b]=napRange(r.dur);$('#napLength').textContent=`${fmt(a)}–${fmt(b)}`;}$('#reason').textContent=r.type==='bedtime'?'The next full nap would fall too close to the evening, so the final wake window points to bedtime.':'This is the first wake window for the selected age and day rhythm.'}
+function simulate(age,id,wake){const p=profile(age,id),sc=SCENARIOS[id],rows=[];let at=toMin(wake);for(let i=0;i<sc.naps;i++){const [a,b]=p.w[i],dur=p.dur[i]||60,mid=Math.round((a+b)/2);rows.push({name:`Nap ${i+1}`,start:at+a,end:at+b,w:[a,b],dur});at=at+mid+dur}const [a,b]=p.w[sc.naps];rows.push({name:'Bedtime',start:at+a,end:at+b,w:[a,b]});return rows}
+function renderPlan(){const age=state.planAge,wake=state.planWake;$('#planAge').value=age;$('#planWake').value=wake;$('#scenarios').innerHTML=scenarioIds(age).map(id=>{const sc=SCENARIOS[id],rows=simulate(age,id,wake),active=id===state.scenario&&age===state.age;return `<article class="scenario ${active?'active':''}"><div class="scenario-top"><div><h3>${sc.name}</h3><p>${sc.desc}</p></div>${active?'<span class="badge">Used today</span>':''}</div>${rows.map(r=>`<div class="row"><div><strong>${r.name}</strong><small>${r.name==='Bedtime'?'Final wake window':'Wake window'} · ${fmt(r.w[0])}–${fmt(r.w[1])}${r.dur?`<br>Suggested nap · ${napRange(r.dur).map(fmt).join('–')}`:''}</small></div><strong>${clock(r.start)}–${clock(r.end)}</strong></div>`).join('')}<button class="primary" data-use="${id}">${active?'Using this rhythm':'Use for today'}</button></article>`}).join('');$$('[data-use]').forEach(b=>b.onclick=()=>{if(state.planAge!==state.age){show('Set the same age on Today before applying this rhythm.');return}state.scenario=b.dataset.use;save();renderAll();show('Rhythm applied')})}
+function renderAll(){renderToday();renderPlan()}
+function show(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+const opts=Array.from({length:22},(_,i)=>i+3).map(n=>`<option value="${n}">${n} months</option>`).join('');$('#age').innerHTML=$('#planAge').innerHTML=opts;
+$('#age').onchange=e=>{state.age=+e.target.value;state.scenario=scenarioIds(state.age)[0];state.planAge=state.age;save();renderAll()};
+$('#awake').oninput=e=>{state.awake=e.target.value;save();renderToday()};
+$('#planAge').onchange=e=>{state.planAge=+e.target.value;save();renderPlan()};
+$('#planWake').oninput=e=>{state.planWake=e.target.value;save();renderPlan()};
+$$('#condition button').forEach(b=>b.onclick=()=>{state.condition=b.dataset.value;save();renderToday()});
+$$('.nav button').forEach(b=>b.onclick=()=>{$$('.page').forEach(p=>p.classList.toggle('active',p.dataset.page===b.dataset.tab));$$('.nav button').forEach(x=>x.classList.toggle('active',x===b));if(b.dataset.tab==='plan')renderPlan()});
+renderAll();
+</script>
+</body>
+</html>
